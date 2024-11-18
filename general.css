@@ -1,0 +1,460 @@
+  *{
+             /******* frist of all Thanks to all things, I used to develop my android phone because I have not pc SO I am not sure to fit all divece but I think It would be*****/
+             
+             
+             
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                }
+            
+            /*body style*/
+            
+            body{
+                width: 100%;
+                height: 340vh;
+                background-color:#FBC02D;
+                color: #444;
+                font-family: Sans-Serif;
+            }
+
+            .sec1{
+
+                width: 100%;
+                height: 100vh;
+            }
+          nav{
+                position: relative;
+                display: flex;
+                padding: .4rem;
+                align-items: center;
+                justify-content: space-around;
+                color: white;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                padding: .4rem;
+            
+            }
+            
+            .logo{
+               
+                color: #FBC02D;
+            }
+            
+            
+           nav ul li a{
+                text-decoration: none;
+                color: white;
+                 font-size: .9rem;
+            }
+            ul li {
+                margin-left: .8rem;
+               
+            }
+            ul li a:hover{
+                color:#FBC02D;
+            }
+            label{
+                color: white;
+            }
+            
+                   /*toogle handle**/
+                   
+            .toogle{
+                margin-top: 1.4rem;
+                position: absolute;
+                top: 3%;
+                right: 6%;
+                font-weight: 900;
+                
+            }
+            nav label, nav input{
+                display: none;
+            }
+            
+            .section-info{
+             margin-top: 10rem;
+            display: flex;
+            justify-content: space-around;
+            }
+            
+            .effect{
+                background-color: #444;
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                z-index: -1;
+                box-shadow: 0 0 3px #444;
+                animation: moving 7s ease;
+            
+                border-end-start-radius: 50%;
+            }
+             b{
+                color: whie;
+            }
+         .sec1 code{
+            color: white;
+            font-family: Monospace;
+         }
+         .section-info{
+             
+             margin-top: 5rem;
+         }
+         .image img{
+             
+             width: 200px;
+             height: 200px;
+             margin-left: 2rem;
+             border-radius:50%;
+             
+         }            
+            
+
+            /* section two*/
+            .sec2{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: .9rem;
+                flex-grow: wrap;
+            }
+            
+            .box{
+            
+                color: #70604a;
+                text-align: center;
+                width: 300px;
+                background-color:#Fff ;
+                height: 400px;
+                position: relative;
+                borde: 1px solid #444;
+                box-shadow: 0 0 6px #444;
+                border-radius: 5px;
+            
+            }
+            
+            .project-title{
+                font-size: 1.3rem;
+                margin: .6rem;
+            }
+            .project-discription{
+                font-size: .8rem;
+            }
+            .box img{
+                width: 100%;
+                height: 100%;
+                margin: 1.4rem;
+            }
+ 
+            
+            /* section 3*/
+            
+            .sec3{
+                height: 80vh;
+                flex-direction: column;
+                
+            }
+            
+            .sec3 h1{
+                text-align: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                
+            }
+   
+         
+         
+         /*this is section 4*/
+         .sec4{
+             height: 40vh;
+             background-color: #444;
+             color: yellow;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+         }
+         .sec4 p{
+           font-size: .6rem;
+           max-width: 196px;
+          }
+
+
+
+@keyframes moving{
+                0%{
+                    height: 6px;
+                }
+               2%{
+                    height: 12;
+                }
+               4%{
+                    height: 18px;
+                }
+               6%{
+                    height: 22px;
+                }
+               8%{
+                    height: 28px;
+                }
+                12%{
+                    height: 32px;
+                }
+               18%{
+                    height: 38;
+                }
+               24%{
+                    height: 42px;
+                }
+               30%{
+                    height: 48px;
+                }
+               36%{
+                    height: 52px;
+                }
+            
+            }
+
+            @media(max-width:600px){
+                .se3{
+                  flex-direction: row;  
+                  overflow-x: scroll;
+                }
+                .effect{
+                    height: 110px;
+                }
+                .logo{
+                    margin-top: 1.4rem;
+                    position: absolute;
+                    top: 6%;
+                    left: 6%;
+                    color: #FBC02D;
+                }
+                nav{
+                    display: flex;
+                    padding: .8rem;
+                }
+             .toogle{
+                    display: block;
+                }
+                
+               ul{
+                    display: none;
+                    flex-direction: column;
+                }
+
+   
+                
+                #toogle:checked + .link{
+                    display: flex;
+                    
+                }
+                .section-info{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+                .image{
+                    align-self: end;
+                    margin-right: 2rem;
+                    margin-top: 3rem;
+                }
+                .section-info .welcome{
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-direction: column;
+                    margin-left: 6%;
+                }
+                .welcome h1{
+                    font-size: 3rem;
+                    max-width: 200px;
+                    margin-bottom: .7rem;
+                }
+                .welcome p{
+                   max-width: 100px; 
+                   font-size: .6rem;
+                }
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .box img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            
+            /**second screen width*/
+            
+            @media(min-width:601px){
+       
+                
+                a{
+                    color: #fff;
+                }
+               ul li{
+                    font-size: .8rem;
+                    
+                }
+              .sec2{
+                 justify-content: space-around;
+                 flex-direction: row;
+                 align-items: center;
+                 flex-grow: wrap;
+                 flex-flow: wrap;
+              }
+              
+              .box{
+                  width: 400px;
+                  height: 400px;
+                  
+              }
+              .section-info{
+                  margin-left: 6%;
+                  margin-top: 26rem;
+                  flex-direction: row-reverse;
+                
+              }
+              .section-info img{
+                  width: 400px;
+                  height: 400px;
+              }
+              .welcome h1{
+                  font-size: 5rem;
+                  max-width: 400px;
+              }
+              .welcome p{
+                  max-width: 300px;
+              }
+            }
+            
+  
+           /***footer***/   
+           
+         .foot{
+             height: 20vh;
+             background-color: #212121;
+              color: fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+         }
+         
+         .foot p{
+             font-size: .8em;
+         }
+     
+      /*section4**/ 
+        .about-me h3{
+            border-left: 2px solid #FBC02D;
+            border-bottom: 2px solid #FBC02D;
+            padding: .3rem;
+            margin: .4rem;
+        }
+        .tools h3{
+           border-right: 2px solid #FBC02D;
+           padding: .3rem;
+           border-top: 2px solid #FBC02D;
+           margin: .4rem;
+        }
+    
+            
+
+            .box h4{
+                 color: #494949;
+                 margin: 0;
+            }
+            .box p{
+                font-size: .7rem;
+                margin: 0;
+            }
+            
+            
+             .social-media{
+             
+             width: 60%;
+             margin-left: auto;
+             margin-right: auto;
+             display: flex;
+             justify-content: space-around;
+         }
+         .social-icons{
+            width: 50px; 
+            
+         }
+         .social-media div{
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+             margin: .6rem;
+         }
+         .social-media div p{
+             margin: .3rem;
+             color: #444;
+         }
+         .social-media div p a{
+             text-decoration: none;
+             font-size: .8rem;
+             color: #eee;
+         }
+        @keyframes moving{
+                0%{
+                    height: 6px;
+                }
+               2%{
+                    height: 12;
+                }
+               4%{
+                    height: 18px;
+                }
+               6%{
+                    height: 22px;
+                }
+               8%{
+                    height: 28px;
+                }
+                12%{
+                    height: 32px;
+                }
+               18%{
+                    height: 38;
+                }
+               24%{
+                    height: 42px;
+                }
+               30%{
+                    height: 48px;
+                }
+               36%{
+                    height: 52px;
+                }
+            
+            }
+  .sec4 p{
+           font-size: .6rem;
+           max-width: 196px;
+           color: white;
+          }
+          .sec4 p:before{
+              content: "-";
+              color: yellow;
+              font-size: 1.4rem;
+              margin-right: .4rem;
+          }
+        
+            
+         .icons{
+             width: 10px;
+             height: 10px;
+         }
+
+   
+         
+         
+         
+         
